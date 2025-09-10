@@ -1,11 +1,6 @@
-name: "my joke action"
-
-description: "use an external API to retrieve and display a joke"
-
-outputs:
-  joke-output:
-    description: The resulting joke from the icanhazdadjokes API
-
-runs:
-  using: "node16"
-  main: "main.js"
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
